@@ -29,7 +29,8 @@ class FPN:
         result = FPN()
         result.number = int(self.number / other.number * 10 ** -FPN.exponent)
         return result
-    
+
+#предотвращение ошибок вывода знака и целой части    
     def __str__(self):
         num_str = str(self.number)
         sign = '-' if num_str[0] == '-' else ''
