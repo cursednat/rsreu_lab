@@ -1,7 +1,3 @@
-class MyError(Exception):
-    def __init__(self, text):
-        self.txt = text
-
 a = input("Input first value: ")
 b = input("Input second value: ")
 
