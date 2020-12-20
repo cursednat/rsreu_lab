@@ -1,3 +1,6 @@
+class Errorz(Exception):
+    pass
+
 a = input("Input first value: ")
 b = input("Input second value: ")
 
@@ -8,8 +11,8 @@ try:
     v = 0
 
     if v == b :
-        raise MyError("Вы собираетесь поделить на 0")
-except MyError as z:
+        raise Errorz("Вы собираетесь поделить на 0")
+except Errorz as z:
     print(z)
     
 class FPN:
