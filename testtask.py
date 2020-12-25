@@ -1,4 +1,4 @@
-class Vector:
+class Vector: 
     def __init__(self, l):
         self.i = l[0]
         self.j = l[1]
